@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="runAsyncTest">
+<project xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="runAsyncTests">
 
     <property name="projectName" value="SalesforceTestRunner" />
     <property name="src.dir" location="src" />
@@ -8,9 +8,10 @@
     <property name="dist.lib.dir" location="dist/lib" />
     <property name="lib.dir" value="lib" />
 
-    <property name="sf.URL" value="https://login.salesforce.com/" />
-    <property name="sf.username" value="kasyan.evgen@gmail.com" />
-    <property name="sf.password" value="Evgen4250022vIHMuYc9tFbMYi1M8GFw6IvR3" />
+    <property environment="env"/>
+    <property name="sf.URL" value="${env.SF_URL}" />
+    <property name="sf.username" value="${env.SF_USERNAME}" />
+    <property name="sf.password" value="${env.SF_PASSWORD}${env.SF_TOKEN}"/>
 
     <!-- external libraries classpath, we don't need sources and javadoc -->
     <path id="classpath">
