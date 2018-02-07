@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+    <info organisation="run.test.salesforce" module="run-salesforce-tests" status="development" >
+        <license name="The Apache Software License, Version 2.0"
+                 url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+        <ivyauthor name="Kasyan Eugene" />
+    </info>
+
+    <dependencies>
+        <dependency org="org.apache.ant" name="ant" rev="1.8.2"/>
+        <dependency org="com.force.api" name="force-wsc" rev="42.0.0"/>
+    </dependencies>
+</ivy-module>
