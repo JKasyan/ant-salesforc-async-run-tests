@@ -10,8 +10,8 @@
 
     <property environment="env"/>
     <property name="sf.URL" value="${env.SF_URL}" />
-    <property name="sf.username" value="${env.SF_USERNAME}" />
-    <property name="sf.password" value="${env.SF_PASSWORD}"/>
+    <property name="sf.username" value="${env.SF_USER}" />
+    <property name="sf.password" value="${env.SF_PASS}${env.SF_TOKEN}"/>
 
     <!-- external libraries classpath, we don't need sources and javadoc -->
     <path id="classpath">

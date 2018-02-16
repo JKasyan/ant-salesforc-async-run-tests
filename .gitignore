@@ -1,6 +1,7 @@
 .idea
 bin
 lib
+!lib/tooling.jar
 out
-run-salesforce-tests.iml
+*.iml
 dist
